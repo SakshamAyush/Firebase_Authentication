@@ -36,6 +36,8 @@ public class HomePage extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //on clicking signup button finish the login activity
+                finish();
                 Intent i = new Intent(HomePage.this, SignUp.class);
                 startActivity(i);
             }
@@ -69,6 +71,8 @@ public class HomePage extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful())
                             {
+                                //End this activity if user is successfully logged in
+                                finish();
                                 Intent i = new Intent(HomePage.this, Profile.class);
                                 //Clear all activities and open a new activity
                                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

@@ -89,4 +89,17 @@ public class HomePage extends AppCompatActivity {
             }
         });
     }
+
+    //We will also check if the user is already logged in
+    //For that we will check it everytime the app opens
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(mAuth.getCurrentUser() != null)//This means user is already logged in
+        {
+            finish();
+            startActivity(new Intent(this, Profile.class));
+        }
+    }
 }

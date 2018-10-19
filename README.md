@@ -15,7 +15,7 @@ press on "Connect"
 # Screenshots
 
 <p float="left">
-<img src="Screenshots/Screenshot_20181019-161214.png" height="400">"                                      "
-<img src="Screenshots/Screenshot_20181019-161221.png" height="400">"                                      "
+<img src="Screenshots/Screenshot_20181019-161214.png" height="400">&emsp;&emsp;
+<img src="Screenshots/Screenshot_20181019-161221.png" height="400">&emsp;&emsp;
 <img src="Screenshots/Screenshot_20181019-161247.png" height="400">
 </p>
